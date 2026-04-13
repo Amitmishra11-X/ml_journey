@@ -13,3 +13,17 @@ top_colleges = df[
 ]
 
 print(top_colleges)
+
+#use loc and ilocdf[row:column]
+colleges = df.loc[:10,['state', 'name']]
+print(colleges) 
+
+colleges = df.iloc[:10]
+print(colleges)
+
+colleges1 = df.iloc[:100][['state', 'name']]
+print(colleges1)
+
+#condition
+specific_state_college = df.loc[df.state == 'Uttar Pradesh']
+print(specific_state_college)
